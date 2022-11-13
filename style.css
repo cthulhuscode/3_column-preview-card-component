@@ -36,6 +36,10 @@ body{
   height: var(--article-height);
 
   padding: 48px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 40px;
 }
 
 .item > img{
@@ -49,8 +53,6 @@ body{
   font-weight: 700;
   line-height: 47.88px;
   color: #fff;
-
-  margin-top: 35px;
 }
 
 .item > p{
@@ -59,8 +61,6 @@ body{
   font-size: 15px;
   line-height: 25px;
   color: #fff;
-
-  margin-top: 25px;
 }
 
 button[type="button"]{
@@ -76,8 +76,6 @@ button[type="button"]{
   line-height: 25px;
 
   cursor: pointer;
-
-  margin-top: 83px;
 }
 
 .item:nth-child(1) > button {
