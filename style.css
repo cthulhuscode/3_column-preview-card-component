@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --article-width: 307px;
+  --article-height: 500px;
+  
+  --orange: #E28625;
+  --turquoise: #006971;
+  --darktuquoise: #004140;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.container{
+  display: flex;    
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: var(--article-height);      
+}
+
+.item{
+  width: var(--article-width);
+  height: var(--article-height);
+
+  padding: 48px;
+}
+
+.item > img{
+  width: 64px;
+  height: 40px;  
+}
+
+.item > h2{
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47.88px;
+  color: #fff;
+
+  margin-top: 35px;
+}
+
+.item > p{
+  font-family: "Lexend Deca";
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+
+  margin-top: 25px;
+}
+
+.item > button{
+  width: 148px;
+  height: 48px;
+
+  border-radius: 25px;
+  border: 2px solid #fff;
+
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+
+  cursor: pointer;
+
+  margin-top: 83px;
+}
+
+.item:nth-child(1) > button {
+  color: var(--orange);
+}
+.item:nth-child(2) > button {
+  color: var(--turquoise);
+}
+.item:nth-child(3) > button {
+  color: var(--darktuquoise);
+}
+
+.item:nth-child(1) > button:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
+.item:nth-child(2) > button:hover {
+  background-color: var(--turquoise);
+  color: #fff;
+}
+.item:nth-child(3) > button:hover {
+  background-color: var(--darktuquoise);
+  color: #fff;
+}
+
+.item:nth-child(1){
+  background-color: var(--orange);  
+  border-radius: 8px 0 0 8px;
+}
+.item:nth-child(2){
+  background-color: var(--turquoise); 
+}
+.item:nth-child(3){
+  background-color: var(--darktuquoise);
+  border-radius: 0 8px 8px 0;
+}
